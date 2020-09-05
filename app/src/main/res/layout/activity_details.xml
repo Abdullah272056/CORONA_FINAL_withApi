@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:text="Country Name"
+                android:id="@+id/CountryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+
+                android:padding="20dp"
+                android:id="@+id/totalCase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:text="Total Case"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <TextView
+
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:text="Today Case"
+                android:id="@+id/todayCases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/totalDeaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:text="Total Death"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/todayDeaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:text="Today Death"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/recover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:text="Recovered"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:text="Active"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/critical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:text="Critical"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/casePerMillion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:text="Cases per Million"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/deathsPerMillion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:text="Deaths per Million"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+
+            <TextView
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:text="Total Test"
+                android:id="@+id/totalTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/testPerMillion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/details_item_background"
+                android:gravity="center"
+                android:text="Test Per Million"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
