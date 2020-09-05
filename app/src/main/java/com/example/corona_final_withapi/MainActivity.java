@@ -2,11 +2,15 @@ package com.example.corona_final_withapi;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -35,29 +39,25 @@ public class MainActivity extends AppCompatActivity {
         getAllInformationData();
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater menuInflater=getMenuInflater ();
-//        menuInflater.inflate(R.menu.menu_layout,menu);
-//
-//        MenuItem menuItem=menu.findItem(R.id.searchViewID);
-//        SearchView searchView= (SearchView) menuItem.getActionView();
-//        searchView.setOnQueryTextListener (new SearchView.OnQueryTextListener () {
-//            @Override
-//            public boolean onQueryTextSubmit(String s) {
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String s) {
-//               // adapter.getFilter().filter(s);
-//                return false;
-//            }
-//        });
-//
-//
-//        return true;
-//    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        MenuItem menuItem = menu.findItem(R.id.searchIconId);
+        androidx.appcompat.widget.SearchView searchView = (androidx.appcompat.widget.SearchView) menuItem.getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return true;
+            }
+        });
+        return true;
+    }
+
 
     @Override
     public void onBackPressed() {
